@@ -4,6 +4,7 @@ public class Main {
     public  static void main(String[] args) {
 
         Scanner scanner=new Scanner(System.in);
+        // fisrt
         System.out.println("ПЕРВОЕ ЧИСЛО");
         int n1=scanner.nextInt();
         System.out.println("Второе ЧИСЛО");
