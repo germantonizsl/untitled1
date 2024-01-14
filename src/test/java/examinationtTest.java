@@ -1,7 +1,7 @@
 import org.example.Main;
 import org.testng.Assert;
 import org.testng.annotations.Test;
-//change
+//changeeee
 public class examinationtTest {
     @Test(description = "проверки двух значений")
     public void testmake(){
