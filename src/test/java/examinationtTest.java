@@ -2,25 +2,25 @@ import org.example.Main;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-public class ExaminationtTest {
+public class examinationtTest {
     @Test(description = "проверки двух значений")
     public void testmake(){
-        Integer result= Main.MAKE1(4,5);
+        Integer result= Main.make1(4,5);
         Assert.assertEquals(result,9);
     }
     @Test(description = "проверки двух значений")
-    public void testsubsract(){
+    public void testSubsract(){
         Integer result= Main.subtract(10,5);
-        Assert.assertEquals(result,5);
+        Assert.assertEquals(result,5,"ну чт0");
     }
     @Test(description = "проверки двух значений")
-    public void testdivide(){
+    public void testDivide(){
         Integer result= Main.divide(10,5);
-        Assert.assertEquals(result,2);
+        Assert.assertEquals(result,2,"ну что");
     }
     @Test(description = "проверки двух значений")
-    public void testmultiply(){
+    public void testMultiply(){
         Integer result= Main.multiply(10,5);
-        Assert.assertEquals(result,50);
+        Assert.assertEquals(result,50,"what");
     }
 }
