@@ -2,8 +2,9 @@ package org.example;
 import java.util.Scanner;
 public class Main {
     public  static void main(String[] args) {
-
+//ffffff
         Scanner scanner=new Scanner(System.in);
+        // fisrt
         System.out.println("ПЕРВОЕ ЧИСЛО");
         int n1=scanner.nextInt();
         System.out.println("Второе ЧИСЛО");
@@ -15,7 +16,7 @@ public class Main {
         switch (action){
             case"+":
                 int resultMake;
-                resultMake = MAKE1(n1,n2);
+                resultMake = make(n1,n2);
 
                 System.out.println(resultMake);
                 break;
@@ -33,12 +34,10 @@ public class Main {
                 System.out.println(resultdivide);
 
                 break;
-
+// новое что-то
         }
     }
-    private int MAKE(int a,int b){
-        return a+b;
-    }
+
     public  static int subtract(int a,int b){
         return a-b;
     }
@@ -48,7 +47,7 @@ public class Main {
     public static int divide(int a,int b){
         return a/b;
     }
-    public static int MAKE1(int a,int b){
+    public static int make(int a, int b){
         return a+b;
     }
 
