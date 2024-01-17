@@ -16,7 +16,7 @@ public class Main {
         switch (action){
             case"+":
                 int resultMake;
-                resultMake = make1(n1,n2);
+                resultMake = make(n1,n2);
 
                 System.out.println(resultMake);
                 break;
@@ -47,7 +47,7 @@ public class Main {
     public static int divide(int a,int b){
         return a/b;
     }
-    public static int make1 (int a,int b){
+    public static int make(int a, int b){
         return a+b;
     }
 

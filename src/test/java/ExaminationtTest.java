@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 public class ExaminationtTest {
     @Test(description = "проверки двух значений")
     public void testmake() {
-        Integer result = Main.make1(4, 5);
+        Integer result = Main.make(4, 5);
         Assert.assertEquals(result, 9);
     }
 
@@ -76,22 +76,22 @@ public class ExaminationtTest {
     }
     @Test(description = "проверки двух значений")
     public void testmakeNegative() {
-        Integer result = Main.make1(-4, -5);
+        Integer result = Main.make(-4, -5);
         Assert.assertEquals(result, -9);
     }
     @Test(description = "проверки двух значений")
     public void testmakeNegativePositive() {
-        Integer result = Main.make1(-4, 5);
+        Integer result = Main.make(-4, 5);
         Assert.assertEquals(result, 1);
     }
     @Test(description = "проверки двух значений")
     public void testmakeZero() {
-        Integer result = Main.make1(-4, 0);
+        Integer result = Main.make(-4, 0);
         Assert.assertEquals(result, -4);
     }
     @Test(description ="работа с провайдером",dataProvider = "testProvider")
     public  void testProviderMake(Integer q,Integer w,Integer e){
-        Integer result = Main.make1(q, w);
+        Integer result = Main.make(q, w);
         Assert.assertEquals(result, e,"проверь еще раз");
 
     }
