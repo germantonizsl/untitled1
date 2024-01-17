@@ -90,16 +90,17 @@ public class ExaminationtTest {
         Assert.assertEquals(result, -4);
     }
     @Test(description ="работа с провайдером",dataProvider = "testProvider")
-    public  void testProviderMake(Integer q,Integer w){
-        Main.make1(q, w);
+    public  void testProviderMake(Integer q,Integer w,Integer e){
+        Integer result = Main.make1(q, w);
+        Assert.assertEquals(result, e,"проверь еще раз");
 
     }
     @DataProvider
     public Object[][] testProvider(){
         return  new Object[][]{
-                {1,2},
-                {0,2},
-                {-4,4}
+                {1,2,3},
+                {0,2,2},
+                {-4,4,0}
         };
     }
 
