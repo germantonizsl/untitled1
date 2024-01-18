@@ -1,9 +1,34 @@
 import org.example.Main;
 import org.testng.Assert;
-import org.testng.annotations.DataProvider;
-import org.testng.annotations.Test;
+import org.testng.annotations.*;
+
 //changeeee
 public class ExaminationtTest {
+    @BeforeClass
+    public void beforeClass(){
+        System.out.println("beforeClass");
+    }
+    @BeforeGroups(groups = {"first group"})
+    public void beforeGroups(){
+        System.out.println("before groups");
+
+    }
+    @Test(description = "негатив",groups = {"first group"},expectedExceptions =ArithmeticException.class,expectedExceptionsMessageRegExp ="/ by zero")
+    public void negativeTestExcepcion(){
+        Main.divide(-10, 0);
+        System.out.println("negavite");
+
+    }
+    @AfterClass
+    public void afterClass(){
+        System.out.println("after Class");
+
+    }
+    @AfterGroups(groups = {"first group"})
+    public void afterGroups(){
+        System.out.println("after Groups");
+
+   }
     @Test(description = "проверки двух значений")
     public void testmake() {
         Integer result = Main.make(4, 5);
